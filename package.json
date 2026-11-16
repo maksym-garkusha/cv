@@ -1,5 +1,5 @@
 {
-  "name": "primary",
+  "name": "cv",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobra283620384720174936/cv.git"
+    "url": "git+https://github.com/maksym-garkusha/cv.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Maksym Harkusha",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cobra283620384720174936/cv/issues"
+    "url": "https://github.com/maksym-garkusha/cv/issues"
   },
-  "homepage": "https://github.com/cobra283620384720174936/cv#readme",
+  "homepage": "https://github.com/maksym-garkusha/cv#readme",
   "dependencies": {
     "@vercel/analytics": "^2.0.1"
   }
