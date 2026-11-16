@@ -5,8 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maksym Harkusha — Software Engineering × GovTech</title>
   <meta name="description" content="Резюме Максима Гаркуші: інженерія програмного забезпечення × політологія, КНУ ім. Тараса Шевченка. GovTech, стажування.">
-  <link rel="icon" href="data:,">
-  <script>document.documentElement.classList.add('js');</script>
+  <meta property="og:title" content="Максим Гаркуша: Software Engineering × Political Science">
+  <meta property="og:description" content="Два бакалаврати в КНУ, проєкти на відкритих державних даних, досвід у молодіжній політиці.">
+  <meta property="og:type" content="profile">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23101418'/%3E%3Crect x='6' y='9' width='20' height='5' fill='%231238c9'/%3E%3Crect x='6' y='18' width='20' height='5' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script type="module">
     import { inject } from 'https://cdn.jsdelivr.net/npm/@vercel/analytics@1/dist/index.mjs';
@@ -15,367 +20,197 @@
 </head>
 <body>
 
-  <!-- ФОНОВЕ СЯЙВО -->
-  <div class="aurora" aria-hidden="true">
-    <div class="aurora__blob aurora__blob--1"><i></i></div>
-    <div class="aurora__blob aurora__blob--2"><i></i></div>
-    <div class="aurora__blob aurora__blob--3"><i></i></div>
-    <div class="aurora__grain"></div>
-  </div>
+<div class="page">
 
-  <!-- ШАПКА -->
-  <header class="header">
-    <div class="container header__inner">
-      <a href="#top" class="logo">Maksym Harkusha<span>.</span></a>
-      <nav class="nav">
-        <a href="#about">Про мене</a>
-        <a href="#edu">Освіта</a>
-        <a href="#exp">Досвід</a>
-        <a href="#community">Діяльність</a>
-        <a href="#skills">Навички</a>
-      </nav>
-      <button class="btn btn--small header__cta" type="button" data-open-contact>Контакти</button>
-    </div>
-  </header>
+  <aside class="rail">
+    <img class="rail__photo" src="photo.jpg" alt="Максим Гаркуша" width="480" height="480">
+    <p class="rail__name">Максим Гаркуша</p>
+    <p class="rail__place">Київ, Україна</p>
 
-  <main id="top">
+    <ul class="links">
+      <li><span>Пошта</span><a href="mailto:252maxs252@gmail.com">252maxs252@gmail.com</a></li>
+      <li><span>Telegram</span><a href="https://t.me/maksym55555" target="_blank" rel="noopener">@maksym55555</a></li>
+      <li><span>GitHub</span><a href="https://github.com/maksym-garkusha" target="_blank" rel="noopener">maksym-garkusha</a></li>
+      <li><span>Телефон</span><a href="tel:+380668225243">+38 066 822 52 43</a></li>
+      <li><span>Facebook</span><a href="https://www.facebook.com/share/1ErYvoKjtU/" target="_blank" rel="noopener">Максим Гаркуша</a></li>
+    </ul>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__text">
-          <!-- ЖИВИЙ СТАТУС -->
-          <div class="status-badge">
-            <span class="status-badge__dot"></span>
-            <span class="status-badge__text">⚡ Open for GovTech & Backend Projects</span>
-          </div>
+    <nav class="toc" aria-label="Розділи">
+      <a href="#about">Про мене</a>
+      <a href="#projects">Проєкти</a>
+      <a href="#exp">Досвід</a>
+      <a href="#edu">Освіта</a>
+      <a href="#community">Діяльність</a>
+      <a href="#skills">Навички</a>
+    </nav>
+  </aside>
 
-          <p class="hero__hello">Привіт, я</p>
-          <h1>Максим Гаркуша</h1>
-          
-          <!-- TYPEWRITER HEADING -->
-          <p class="hero__role">
-            <span id="typewriter"></span><span class="cursor" aria-hidden="true">|</span>
+  <main>
+
+    <header class="hero">
+      <h1>Software Engineering <span class="times">×</span> Political Science</h1>
+      <p class="hero__pitch">Студент двох спеціальностей Київського національного університету ім. Тараса Шевченка. Поєдную навчання розробки на C#/.NET з вивченням основ державного управління, політології та філософії для допомоги у цифровізації публічного сектору.</p>
+
+      <!-- дві освіти на одній шкалі часу -->
+      <div class="tracks" role="img" aria-label="Шкала часу: ліцей 2022–2025, політологія 2025–2029, інженерія програмного забезпечення 2026–2030">
+        <div class="tracks__years" aria-hidden="true">
+          <span>2022</span><span>2023</span><span>2024</span><span>2025</span><span>2026</span><span>2027</span><span>2028</span><span>2029</span><span>2030</span>
+        </div>
+        <div class="tracks__rows" aria-hidden="true">
+          <div class="track track--lyceum"><span>Гуманітарний ліцей КНУ</span></div>
+          <div class="track track--polit"><span>Політологія</span></div>
+          <div class="track track--se"><span>Інженерія ПЗ</span></div>
+          <div class="tracks__now"><i>зараз</i></div>
+        </div>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>Код, держава, архітектура</h2>
+      <p>Навчаюсь водночас на денних формах «Інженерії програмного забезпечення» (факультет комп'ютерних наук та кібернетики) та «Політології» (Філософський факультет) у КНУ ім. Тараса Шевченка. Найцікавіші задачі для себе бачу в розробці технічної архітектури для державних та громадських сервісів (GovTech).</p>
+      <p>Координую спільноту <a href="https://gov4you.org" target="_blank" rel="noopener">Gov4You</a> та стажування у <a href="https://www.instagram.com/allukryouthcenter" target="_blank" rel="noopener">Всеукраїнському молодіжному центрі</a>. Можу виступати мостом між технічними розробниками та управлінцями в міністерствах.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Проєкти</h2>
+
+      <article class="project">
+        <div class="project__head">
+          <h3>energoreestr</h3>
+          <p class="project__stack">C#, ASP.NET Core, EF Core, SQLite, GitHub Actions</p>
+        </div>
+        <p>Три відкриті реєстри НКРЕКП з data.gov.ua, зведені за кодом ЄДРПОУ: компанію видно одразу в усіх. Програма щотижня забирає свіжі файли, виправляє зсунуті колонки та загублені нулі в кодах і збирає звіт про технічні вади файлів із номерами рядків.</p>
+        <p class="project__links">
+          <a href="https://maksym-garkusha.github.io/energoreestr/" target="_blank" rel="noopener">Відкрити пошук</a>
+          <a href="https://github.com/maksym-garkusha/energoreestr" target="_blank" rel="noopener">Код на GitHub</a>
+        </p>
+      </article>
+
+      <article class="project">
+        <div class="project__head">
+          <h3>Сайт Path of Science</h3>
+          <p class="project__stack">HTML, CSS, JavaScript, Google Apps Script, Telegram Bot API</p>
+        </div>
+        <p>Сайт наукової спільноти студентів і молодих дослідників: архів подій за п'ять років, конференція пам'яті Кнорозова, форма заявки. Заявка з сайту потрапляє в Google Таблицю та в Telegram-групу організаторів.</p>
+        <p class="project__links">
+          <a href="https://path-of-science.vercel.app" target="_blank" rel="noopener">Відкрити сайт</a>
+          <a href="https://github.com/maksym-garkusha/path-of-science" target="_blank" rel="noopener">Код на GitHub</a>
+        </p>
+      </article>
+    </section>
+
+    <section id="exp">
+      <h2>Досвід</h2>
+
+      <article class="entry">
+        <p class="entry__when">серпень 2026 — нині</p>
+        <div>
+          <h3>Manager of Community, <a href="https://gov4you.org" target="_blank" rel="noopener">Gov4You</a></h3>
+          <p>Координація спільноти, побудова сталих зв'язків та залучення стейкхолдерів. Один з організаторів Launch Event. Представляв організацію на Національному молодіжному таборі від Українського Червоного Хреста у Івано-Франківській області (вересень 2026).</p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <p class="entry__when">жовтень — листопад 2026</p>
+        <div>
+          <h3>Manager of Communications, стажування, <a href="https://www.instagram.com/allukryouthcenter" target="_blank" rel="noopener">Всеукраїнський молодіжний центр</a></h3>
+          <p>Робота в команді державної установи в координації з Міністерством молоді та спорту України. Інформаційний супровід, розробка комунікаційних матеріалів та ведення протоколу.</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="edu">
+      <h2>Освіта</h2>
+
+      <article class="entry">
+        <p class="entry__when">2026 — 2030</p>
+        <div>
+          <h3>КНУ ім. Тараса Шевченка, факультет комп'ютерних наук та кібернетики</h3>
+          <p>Бакалавр «Інженерія програмного забезпечення».</p>
+        </div>
+      </article>
+      <article class="entry">
+        <p class="entry__when">2025 — 2029</p>
+        <div>
+          <h3>КНУ ім. Тараса Шевченка, Філософський факультет</h3>
+          <p>Бакалавр «Політологія». Студентське самоврядування.</p>
+        </div>
+      </article>
+      <article class="entry">
+        <p class="entry__when">2022 — 2025</p>
+        <div>
+          <h3>Український гуманітарний ліцей при КНУТШ</h3>
+          <p>Випускник. Заступник учнівського президента ліцею.</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="community">
+      <h2>Діяльність</h2>
+
+      <article class="entry">
+        <p class="entry__when">понад 10 дискусій</p>
+        <div>
+          <h3>Телеканал LB.UA</h3>
+          <p>Учасник експертних дискусій.</p>
+        </div>
+      </article>
+      <article class="entry">
+        <p class="entry__when">10+ засідань</p>
+        <div>
+          <h3>ТСК Верховної Ради</h3>
+          <p>Громадський слухач на засіданнях Тимчасової слідчої комісії Верховної Ради України.</p>
+        </div>
+      </article>
+      <article class="entry">
+        <p class="entry__when">з 2024</p>
+        <div>
+          <h3>Київська міська рада старшокласників</h3>
+          <p>10+ моделей ООН, Верховної Ради України, КМДА та участь у дебатних турнірах.</p>
+        </div>
+      </article>
+      <article class="entry">
+        <p class="entry__when">вересень 2025</p>
+        <div>
+          <h3><a href="https://www.young-mayor.com" target="_blank" rel="noopener">Офіс юного мера</a></h3>
+          <p>Заступник голови. Організація подій разом із командою в КПДЮ та на інших міських локаціях.</p>
+        </div>
+      </article>
+      <article class="entry">
+        <p class="entry__when">осінь 2025</p>
+        <div>
+          <h3>Молодіжні об'єднання</h3>
+          <p>Активна підтримка та участь в ініціативах і заходах:
+            <a href="https://www.instagram.com/uba_students_league" target="_blank" rel="noopener">Ліга студентів АПУ</a>,
+            <a href="https://www.instagram.com/m_parlament_ua" target="_blank" rel="noopener">Молодіжний парламент</a>,
+            <a href="https://www.instagram.com/ze_molodizhka/" target="_blank" rel="noopener">Земолодіжка</a>,
+            <a href="https://www.instagram.com/path_of_science" target="_blank" rel="noopener">Path of Science</a>.
           </p>
-          
-          <p class="hero__pitch">Студент двох спеціальностей Київського національного університету ім. Тараса Шевченка. Поєдную навчання розробки на C#/.NET з вивченням основ державного управління, політології та філософії для допомоги у цифровізації публічного сектору.</p>
-          <div class="hero__actions">
-            <button class="btn" type="button" data-open-contact>Написати мені</button>
-            <a class="btn btn--ghost" href="#exp">Дивитись досвід</a>
-          </div>
         </div>
-
-        <div class="hero__photo-wrapper">
-          <div class="photo-frame">
-            <div class="photo-frame__corner photo-frame__corner--tl"></div>
-            <div class="photo-frame__corner photo-frame__corner--br"></div>
-            <img src="photo.jpg" alt="Максим Гаркуша">
-          </div>
-        </div>
-      </div>
+      </article>
     </section>
 
-    <!-- ПРО МЕНЕ -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section__head reveal">
-          <span class="section__label">Про мене</span>
-          <h2>Код × Держава × Архітектура</h2>
-        </div>
-        <p class="lead reveal">Навчаюсь водночас на денних формах «Інженерії програмного забезпечення» (факультет компьютерних наук та кібернетики) та «Політології» (Філософський факультет) у КНУ ім. Тараса Шевченка. Найцікавіші задачі для себе бачу в розробці технічної архітектури для державних та громадських сервісів (GovTech).</p>
-        <p class="lead reveal">Координую спільноту <a class="inline-link" href="https://gov4you.org" target="_blank" rel="noopener">Gov4You</a> та стажування у <a class="inline-link" href="https://www.instagram.com/allukryouthcenter" target="_blank" rel="noopener">Всеукраїнському молодіжному центрі</a>. Можу виступати мостом між технічними розробниками та управлінцями в міністерствах.</p>
-      </div>
+    <section id="skills">
+      <h2>Навички та те, що я зараз активно вивчаю</h2>
+      <dl class="skills">
+        <dt>C# / .NET Engineering</dt>
+        <dd>C#, .NET, OOP, LINQ, Data Structures, Git / GitHub, Console Apps</dd>
+        <dt>GovTech та аналітика</dt>
+        <dd>Архітектура реєстрів, електронне урядування, Open Data Analysis, Public Policy, QA / тестування</dd>
+        <dt>Менеджмент та комунікації</dt>
+        <dd>GR (Government Relations), проєктний менеджмент, стратегія переговорів, Microsoft Office, протокол</dd>
+      </dl>
     </section>
 
-    <!-- ОСВІТА -->
-    <section class="section" id="edu">
-      <div class="container">
-        <div class="section__head reveal">
-          <span class="section__label">Освіта</span>
-          <h2>Два бакалаврати · ліцей · міжнародне навчання</h2>
-        </div>
-        <div class="grid grid--2">
-          <article class="card reveal">
-            <div class="card__top">
-              <h3>КНУ ім. Тараса Шевченка · ФКНК</h3>
-              <span class="tag">2026 — 2030</span>
-            </div>
-            <p>Бакалавр «Інженерія програмного забезпечення».</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__top">
-              <h3>КНУ ім. Тараса Шевченка · Філософський факультет</h3>
-              <span class="tag tag--violet">2025 — 2029</span>
-            </div>
-            <p>Бакалавр «Політологія». Студентське самоврядування.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__top">
-              <h3>Український гуманітарний ліцей при КНУТШ</h3>
-              <span class="tag tag--soft">2022 — 2025</span>
-            </div>
-            <p>Випускник. Заступник учнівського президента ліцею.</p>
-          </article>
-        </div>
-      </div>
+    <section id="contact" class="closing">
+      <h2>Давайте працювати разом</h2>
+      <p>GovTech проєкти, стажування, запрошення на дискусії чи колаборації: пишіть на <a href="mailto:252maxs252@gmail.com">252maxs252@gmail.com</a> або в <a href="https://t.me/maksym55555" target="_blank" rel="noopener">Telegram</a>. Відкритий до офлайн та онлайн форматів.</p>
     </section>
 
-    <!-- КЛЮЧОВИЙ ПРОФЕСІЙНИЙ ДОСВІД -->
-    <section class="section" id="exp">
-      <div class="container">
-        <div class="section__head reveal">
-          <span class="section__label">Шлях і карʼєра</span>
-          <h2>Молодіжна політика та ком'юніті</h2>
-        </div>
-        <div class="featured-experience">
-          <article class="exp-card reveal">
-            <div class="exp-card__header">
-              <div>
-                <span class="exp-badge">Ключовий проєкт</span>
-                <h3>Manager of Community</h3>
-                <a class="org" href="https://gov4you.org" target="_blank" rel="noopener">Gov4You</a>
-              </div>
-              <span class="when">серпень 2026 — нині</span>
-            </div>
-            <p class="exp-card__body">Координація спільноти, побудова сталих зв'язків та залучення стейкхолдерів. Один з організаторів Launch Event. Представляв організацію на Національному молодіжному таборі від Українського Червоного Хреста у Івано-Франківській області (вересень 2026).</p>
-          </article>
-
-          <article class="exp-card reveal">
-            <div class="exp-card__header">
-              <div>
-                <span class="exp-badge exp-badge--gov">Державна молодіжна політика</span>
-                <h3>Manager of Communications · стажування</h3>
-                <a class="org" href="https://www.instagram.com/allukryouthcenter" target="_blank" rel="noopener">Всеукраїнський молодіжний центр</a>
-              </div>
-              <span class="when">жовтень-листопад 2026 </span>
-            </div>
-            <p class="exp-card__body">Робота в команді державної установи в координації з Міністерством молоді та спорту України. Інформаційний супровід, розробка комунікаційних матеріалів та ведення протоколу.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ГРОМАДСЬКА ДІЯЛЬНІСТЬ -->
-    <section class="section" id="community">
-      <div class="container">
-        <div class="section__head reveal">
-          <span class="section__label">Ініціативи та медіа</span>
-          <h2>Діяльність</h2>
-        </div>
-        <div class="grid grid--3">
-          <article class="card reveal">
-            <div class="card__top">
-              <h3>Телеканал LB.UA</h3>
-            </div>
-            <p>Учасник понад 10 експертних дискусій.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__top">
-              <h3>ТСК Верховної Ради</h3>
-              <span class="tag">10+ засідань</span>
-            </div>
-            <p>Громадський слухач на засіданнях Тимчасової слідчої комісії Верховної Ради України.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__top">
-              <h3>Київська міська рада старшокласників</h3>
-              <span class="tag tag--violet">з 2024</span>
-            </div>
-            <p>10+ моделей ООН, Верховної Ради України, КМДА та участь у дебатних турнірах.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__top">
-              <h3><a class="card__link" href="https://www.young-mayor.com" target="_blank" rel="noopener">Офіс юного мера ↗</a></h3>
-              <span class="tag tag--soft">вер. 2025</span>
-            </div>
-            <p>Заступник голови. Організація подій разом із командою в КПДЮ та на інших міських локаціях.</p>
-          </article>
-          <article class="card reveal">
-            <div class="card__top">
-              <h3>Молодіжні об'єднання</h3>
-              <span class="tag tag--violet">осінь 2025</span>
-            </div>
-            <p>Активна підтримка та участь в ініціативах і заходах:</p>
-            <div class="chips" style="margin-top: 10px;">
-              <a class="chip chip--link" href="https://www.instagram.com/uba_students_league" target="_blank" rel="noopener">Ліга студентів АПУ</a>
-              <a class="chip chip--link" href="https://www.instagram.com/m_parlament_ua" target="_blank" rel="noopener">Молодіжний парламент</a>
-              <a class="chip chip--link" href="https://www.instagram.com/ze_molodizhka/" target="_blank" rel="noopener">Земолодіжка</a>
-              <a class="chip chip--link" href="https://www.instagram.com/path_of_science" target="_blank" rel="noopener">Path of Science</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- НАВИЧКИ (ОНОВЛЕНО ДЛЯ GovTech & BACKEND) -->
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section__head reveal">
-          <span class="section__label">Компетенції</span>
-          <h2>Навички та те, що я зараз активно вивчаю</h2>
-        </div>
-        <div class="grid grid--3">
-          <div class="card reveal">
-            <h3>C# / .NET Engineering</h3>
-            <div class="chips skills__chips">
-              <span class="chip">C#</span><span class="chip">.NET</span><span class="chip">OOP</span><span class="chip">LINQ</span><span class="chip">Data Structures</span><span class="chip">Git / GitHub</span><span class="chip">Console Apps</span>
-            </div>
-          </div>
-          <div class="card reveal">
-            <h3>GovTech & Аналітика</h3>
-            <div class="chips skills__chips">
-              <span class="chip">Архітектура реєстрів</span><span class="chip">Електронне урядування</span><span class="chip">Open Data Analysis</span><span class="chip">Public Policy</span><span class="chip">QA / тестування</span>
-            </div>
-          </div>
-          <div class="card reveal">
-            <h3>Менеджмент та Комунікації</h3>
-            <div class="chips skills__chips">
-              <span class="chip">GR (Government Relations)</span><span class="chip">Проєктний менеджмент</span><span class="chip">Стратегія переговорів</span><span class="chip">Microsoft Office</span><span class="chip">Протокол</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- КОНТАКТИ -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="contact reveal">
-          <h2>Давайте працювати разом</h2>
-          <p>GovTech проєкти, стажування, запрошення на дискусії чи колаборації — пишіть.</p>
-          <div class="contact__actions">
-            <a class="btn" href="mailto:252maxs252@gmail.com">252maxs252@gmail.com</a>
-            <button class="btn btn--ghost" type="button" data-open-contact>Усі контакти</button>
-          </div>
-          <p class="contact__note">Київ, Україна · відкритий до офлайн та онлайн форматів</p>
-        </div>
-      </div>
-    </section>
-
+    <footer>© 2026 Максим Гаркуша</footer>
   </main>
 
-  <!-- ФУТЕР -->
-  <footer class="footer">
-    <div class="container">
-      <p>© 2026 <b>Максим Гаркуша</b> · Київ, Україна</p>
-    </div>
-  </footer>
-
-  <!-- МОДАЛЬНЕ ВІКНО КОНТАКТІВ -->
-  <div class="contact-modal" id="contactModal" hidden>
-    <div class="contact-modal__backdrop" data-close-contact></div>
-    <div class="contact-modal__panel" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
-      <button class="contact-modal__close" type="button" data-close-contact aria-label="Закрити">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
-      </button>
-      <p class="contact-modal__label">Контакти</p>
-      <h2 id="contactModalTitle">Напишіть мені</h2>
-
-      <div class="contact-list">
-        <a class="contact-row" href="mailto:252maxs252@gmail.com">
-          <span class="contact-row__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3.5 7.5 8.5 5.5 8.5-5.5"/></svg>
-          </span>
-          <span class="contact-row__text">
-            <span class="contact-row__label">Електронна пошта</span>
-            <span class="contact-row__value">252maxs252@gmail.com</span>
-          </span>
-        </a>
-        <a class="contact-row" href="tel:+380668225243">
-          <span class="contact-row__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5h3l1.6 4.2-2 1.5a12.5 12.5 0 0 0 5.7 5.7l1.5-2 4.2 1.6v3c0 1.1-.9 1.9-2 1.8C11.7 19.7 4.3 12.3 3.7 5.5c-.1-1.1.7-2 1.8-2Z"/></svg>
-          </span>
-          <span class="contact-row__text">
-            <span class="contact-row__label">Телефон</span>
-            <span class="contact-row__value">+38 066 822 52 43</span>
-          </span>
-        </a>
-        <a class="contact-row" href="https://t.me/maksym55555" target="_blank" rel="noopener">
-          <span class="contact-row__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 4 3.4 10.8l5.3 2 2 6.3 3-4 4.8 3L21 4Z"/><path d="m8.7 12.8 8-5"/></svg>
-          </span>
-          <span class="contact-row__text">
-            <span class="contact-row__label">Telegram</span>
-            <span class="contact-row__value">@maksym55555</span>
-          </span>
-        </a>
-        <a class="contact-row" href="https://www.facebook.com/share/1ErYvoKjtU/" target="_blank" rel="noopener">
-          <span class="contact-row__icon">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.6-1.5H17V4.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2v2H8v3h2.5V21h3Z"/></svg>
-          </span>
-          <span class="contact-row__text">
-            <span class="contact-row__label">Facebook</span>
-            <span class="contact-row__value">Максим Гаркуша</span>
-          </span>
-        </a>
-      </div>
-
-      <p class="contact-modal__note">Київ, Україна · відповідаю швидко</p>
-    </div>
-  </div>
-
-  <script>
-    const root = document.documentElement;
-    addEventListener('pointermove', (e) => {
-      root.style.setProperty('--mx', (e.clientX / innerWidth).toFixed(3));
-      root.style.setProperty('--my', (e.clientY / innerHeight).toFixed(3));
-    }, { passive: true });
-
-    const targetText = "Software Engineering × Political Science";
-    const typewriterElem = document.getElementById('typewriter');
-    let charIndex = 0;
-
-    function typeChar() {
-      if (charIndex < targetText.length) {
-        typewriterElem.textContent += targetText.charAt(charIndex);
-        charIndex++;
-        setTimeout(typeChar, 55 + Math.random() * 40);
-      }
-    }
-    setTimeout(typeChar, 400);
-
-    if ('IntersectionObserver' in window) {
-      const io = new IntersectionObserver((entries) => {
-        entries.forEach((en) => {
-          if (en.isIntersecting) {
-            en.target.classList.add('is-in');
-            io.unobserve(en.target);
-          }
-        });
-      }, { threshold: 0.12 });
-      document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
-    } else {
-      document.querySelectorAll('.reveal').forEach((el) => el.classList.add('is-in'));
-    }
-
-    const modal = document.getElementById('contactModal');
-    let lastFocused = null;
-
-    function openContact() {
-      lastFocused = document.activeElement;
-      modal.hidden = false;
-      document.body.classList.add('is-locked');
-      modal.querySelector('.contact-modal__close').focus();
-    }
-
-    function closeContact() {
-      modal.hidden = true;
-      document.body.classList.remove('is-locked');
-      if (lastFocused) lastFocused.focus();
-    }
-
-    document.querySelectorAll('[data-open-contact]').forEach((btn) => {
-      btn.addEventListener('click', openContact);
-    });
-
-    modal.querySelectorAll('[data-close-contact]').forEach((el) => {
-      el.addEventListener('click', closeContact);
-    });
-
-    addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && !modal.hidden) closeContact();
-    });
-  </script>
+</div>
 
 </body>
 </html>
